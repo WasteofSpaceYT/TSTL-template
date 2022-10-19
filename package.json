@@ -1,0 +1,16 @@
+{
+  "name": "tstl-template",
+  "version": "1.0.0",
+  "description": "A template for a set-up project to use typescript to lua for either roblox or computercraft",
+  "main": "index.js",
+  "scripts": {
+    "build": "tstl",
+    "dev": "tstl --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lua-types": "^2.13.0",
+    "typescript-to-lua": "^1.10.1"
+  }
+}
