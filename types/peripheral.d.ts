@@ -11,11 +11,11 @@ declare namespace peripheral {
     /**
      * Get the types of a named or wrapped peripheral
      */
-    function getType(peripheral: string | LuaTable): string
+    function getType(peripheral: string | string[]): string
     /**
      * Check if a peripheral is of a particular type
      */
-    function hastype(peripheral: string | LuaTable, peripheral_type: string): boolean
+    function hastype(peripheral: string | string[], peripheral_type: string): boolean
     /**
      * Gets all available methods for the peripheral with the given name
      */
@@ -23,7 +23,7 @@ declare namespace peripheral {
     /**
      * Get the name of a peripheral wrapped with peripheral.wrap
      */
-    function getName(peripheral: LuaTable): string
+    function getName(peripheral: string[]): string
     /**
      * Call a method on the peripheral with the given name
      */
@@ -31,9 +31,9 @@ declare namespace peripheral {
     /**
      * Get a table containing all functions available on a peripheral. These can then be called instead of using peripheral.call every time.
      */
-    function wrap(name: string): LuaTable
+    function wrap(name: string): string[]
     /**
      * Find all peripherals of a specific type, and return the wrapped peripherals
      */
-    function find(type: string, filter?: (name:string, wrapped: LuaTable) => boolean): LuaTable
+    function find(type: string, filter?: (name:string, wrapped: string[]) => boolean): string[]
 }

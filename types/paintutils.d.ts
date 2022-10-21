@@ -3,11 +3,11 @@ declare namespace paintutils {
     /**
      * Parses an image from a multi-line string.
      */
-    function parseImage(image: string): LuaTable
+    function parseImage(image: string): string[]
     /**
      * Loads an image from file.
      */
-    function loadImage(path: string): LuaTable | null
+    function loadImage(path: string): string[] | null
     /**
      * Draws a single pixel to the current term at the specified position.
      */
@@ -27,5 +27,5 @@ declare namespace paintutils {
     /**
      * Draw an image loaded by paintutils.parseImage or paintutils.loadImage.
      */
-    function drawImage(image: LuaTable, xPos: number, yPos: number): void
+    function drawImage(image: string[], xPos: number, yPos: number): void
 }
