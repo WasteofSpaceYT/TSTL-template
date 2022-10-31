@@ -63,7 +63,7 @@ declare namespace http {
      * @see [CC: Tweaked Docs](https://tweaked.cc/module/http.html#v:websocket)
      * @see [[Out of Date] ComputerCraft Wiki](https://wiki.computercraft.cc/Http.websocket)
      */
-    function websocket(url: string, headers?: Headers): lWebSocket | [ false, string ];
+    function websocket(url: string, headers?: Headers): lWebSocket;
 
     /**
      * Asynchronously open a websocket.
